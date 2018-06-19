@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/question_editText"
+        android:layout_width="384dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/name_of_question"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/third_wrong_answer_editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/third_wrong_answer"
+        app:layout_constraintEnd_toEndOf="@+id/save_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/save_button"
+        app:layout_constraintTop_toBottomOf="@+id/first_wrong_answer_editText" />
+
+    <EditText
+        android:id="@+id/second_wrong_answer_editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/second_wrong_answer"
+        app:layout_constraintEnd_toEndOf="@+id/first_wrong_answer_editText"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/first_wrong_answer_editText"
+        app:layout_constraintTop_toBottomOf="@+id/correct_answer_editText" />
+
+    <EditText
+        android:id="@+id/first_wrong_answer_editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/first_wrong_answer"
+        app:layout_constraintEnd_toEndOf="@+id/third_wrong_answer_editText"
+        app:layout_constraintStart_toStartOf="@+id/third_wrong_answer_editText"
+        app:layout_constraintTop_toBottomOf="@+id/second_wrong_answer_editText" />
+
+    <EditText
+        android:id="@+id/correct_answer_editText"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="148dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/correct_answer"
+        app:layout_constraintEnd_toEndOf="@+id/second_wrong_answer_editText"
+        app:layout_constraintStart_toStartOf="@+id/second_wrong_answer_editText"
+        app:layout_constraintTop_toBottomOf="@+id/question_editText" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/save_question"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/third_wrong_answer_editText" />
+</android.support.constraint.ConstraintLayout>

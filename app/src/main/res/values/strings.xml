@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">TriviaApp</string>
+    <string name="name">Name</string>
+    <string name="third_wrong_answer">third wrong answer</string>
+    <string name="second_wrong_answer">second wrong answer</string>
+    <string name="correct_answer">correct answer</string>
+    <string name="first_wrong_answer">first wrong answer</string>
+    <string name="save_question">save question</string>
+    <string name="name_of_question">name of question</string>
 </resources>
